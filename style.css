@@ -113,3 +113,61 @@ body {
 .card-info img {
     width: 50px;
 }
+/* OPEN SOURCE SECTION */
+.open-source {
+  padding: 80px 10%;
+  background-color: #f4f7ff;
+  text-align: center;
+}
+
+.open-source h4 {
+  color: #ff4d4d;
+  letter-spacing: 2px;
+}
+
+.open-source h2 {
+  margin-bottom: 40px;
+}
+
+.contribution-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.contribution-card {
+  background: white;
+  padding: 25px;
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.contribution-card:hover {
+  transform: translateY(-10px);
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 5px 15px;
+  background: #1e73e8;
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.contribution-stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.stat-box h3 {
+  font-size: 35px;
+  color: #1e73e8;
+}

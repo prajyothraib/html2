@@ -88,6 +88,110 @@
           </a>
         </div>
       </div>
+       <div class="card">
+        <img class="thumb" src="images/trending-01.jpg" />
+        <div class="card-info">
+          <div class="card-name">
+            <p>Action</p>
+            <h3>Assasins creed</h3>
+          </div>
+          <a>
+            <img src="images/online-shopping.png" />
+          </a>
+        </div>
+      </div>
+       <div class="card">
+        <img class="thumb" src="images/trending-01.jpg" />
+        <div class="card-info">
+          <div class="card-name">
+            <p>Action</p>
+            <h3>Assasins creed</h3>
+          </div>
+          <a>
+            <img src="images/online-shopping.png" />
+          </a>
+        </div>
+      </div>
+       <div class="card">
+        <img class="thumb" src="images/trending-01.jpg" />
+        <div class="card-info">
+          <div class="card-name">
+            <p>Action</p>
+            <h3>Assasins creed</h3>
+          </div>
+          <a>
+            <img src="images/online-shopping.png" />
+          </a>
+        </div>
+      </div>
     </div>
   </div>
+  <!-- OPEN SOURCE CONTRIBUTION SECTION -->
+<section class="open-source">
+  <div class="container">
+    <h4>contribution</h4>
+    <h2>my Contributions</h2>
+
+    <div class="contribution-cards">
+
+      <div class="contribution-card">
+        <h3>HTML UI Improvements</h3>
+        <p>Improved responsive layout and added modern UI components.</p>
+        <span class="badge">Frontend</span>
+      </div>
+
+      <div class="contribution-card">
+        <h3>Bug Fixes</h3>
+        <p>Fixed navigation alignment and mobile responsiveness issues.</p>
+        <span class="badge">Fix</span>
+      </div>
+
+      <div class="contribution-card">
+        <h3>Feature Enhancement</h3>
+        <p>Added search functionality and interactive buttons.</p>
+        <span class="badge">Enhancement</span>
+      </div>
+
+    </div>
+
+    <div class="contribution-stats">
+      <div class="stat-box">
+        <h3 id="commitCount">0</h3>
+        <p>Commits</p>
+      </div>
+
+      <div class="stat-box">
+        <h3 id="prCount">0</h3>
+        <p>Pull Requests</p>
+      </div>
+
+      <div class="stat-box">
+        <h3 id="issueCount">0</h3>
+        <p>Issues Resolved</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<script>
+  function animateValue(id, start, end, duration) {
+    let range = end - start;
+    let current = start;
+    let increment = end > start ? 1 : -1;
+    let stepTime = Math.abs(Math.floor(duration / range));
+    let obj = document.getElementById(id);
+
+    let timer = setInterval(function() {
+      current += increment;
+      obj.textContent = current;
+      if (current == end) {
+        clearInterval(timer);
+      }
+    }, stepTime);
+  }
+
+  animateValue("commitCount", 0, 25, 1500);
+  animateValue("prCount", 0, 8, 1500);
+  animateValue("issueCount", 0, 12, 1500);
+</script>
 </body>
